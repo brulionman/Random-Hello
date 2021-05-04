@@ -67,10 +67,53 @@ h1 {
 
 .hello {
   background-color: var(--light-green);
-  color: var(--dark-green);
-  border: solid var(--dark-green);
+  /* color: var(--dark-green); */ /* commout to avail different styles */
+  border: solid /* var(--dark-green)*/; /* var(--dark-green) */
   padding: 1rem;
   margin: 5px;
   border-radius: 7px;
   font-weight: bold;
+}
+
+/* list of colors (types) to randomise */
+
+.hello.info {
+  background-color: lightblue;
+  color: teal;
+  border-color: teal;
+}
+.hello.danger {
+  background-color: rgb(255, 164, 164);
+  color: rgb(128, 0, 0);
+  border-color: rgb(128, 0, 0);
+}
+.hello.warning {
+  background-color: rgb(225, 230, 173);
+  color: rgb(128, 109, 0);
+  border-color: rgb(128, 109, 0);
+}
+.hello.success {
+  background-color: rgb(178, 173, 230);
+  color: rgb(79, 0, 128);
+  border-color: rgb(79, 0, 128);
+}
+.hello.nothingbox {
+  background-color: rgb(223, 227, 228);
+  color: rgb(104, 104, 104);
+  border-color: rgb(104, 104, 104);
+}
+.hello.blue {
+  background-color: rgb(173, 215, 230);
+  color: rgb(0, 4, 128);
+  border-color: rgb(0, 4, 128);
+}
+.hello.orange {
+  background-color: rgb(230, 204, 173);
+  color: rgb(128, 81, 0);
+  border-color: rgb(128, 81, 0);
+}
+.hello.pink {
+  background-color: rgb(227, 173, 230);
+  color: rgb(128, 0, 124);
+  border-color: rgb(128, 0, 124);
 }
