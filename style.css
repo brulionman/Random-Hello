@@ -1,16 +1,76 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;600&display=swap');
 
-*{
-    box-sizing: border-box;
+* {
+  box-sizing: border-box;
 }
 
-body{
-    font-family: 'Montserrat', sans-serif;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    overflow: hidden;
-    margin: 0;
+:root {
+  --dark-green: rgb(64, 128, 107);
+  --light-green: #a3f4ca;
+}
+
+body {
+  background-color: var(--light-green);
+  color: var(--dark-green);
+  font-family: 'Source Sans Pro', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+}
+
+h1 {
+  font-weight: lighter;
+}
+
+#hello-span {
+  color: rgb(82, 48, 7);
+  font-weight: bold;
+}
+
+.btn {
+  background-color: var(--dark-green);
+  color: var(--light-green);
+  font-family: inherit;
+  font-size: 1.3rem;
+  font-weight: bold;
+  padding: 1rem 2rem;
+  border: rgb(82, 48, 7) solid 4px;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+  margin-top: 30px;
+}
+
+.btn:hover {
+  outline: none;
+  color: rgb(82, 48, 7);
+}
+
+.btn:active {
+  color: var(--light-green);
+  transition: all 0.1s ease-in;
+  transform: scale(0.96);
+}
+
+#toasts {
+  position: fixed;
+  top: 15px;
+  right: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.hello {
+  background-color: var(--light-green);
+  color: var(--dark-green);
+  border: solid var(--dark-green);
+  padding: 1rem;
+  margin: 5px;
+  border-radius: 7px;
+  font-weight: bold;
 }
